@@ -226,3 +226,9 @@
 .v3-ticker-dot{width:5px;height:5px;border-radius:50%;background:rgba(0,0,0,0.35);margin-left:26px}
 @keyframes v3tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.v3-ticker-move{animation:none}}
+
+/* --- tab filters styled like nav links (pill active, no underline) --- */
+button.border-b-2{border-bottom:none;margin:8px 8px 8px 0;border-radius:999px;padding:7px 14px;color:var(--ink2);transition:background .15s,color .15s}
+button.border-b-2:hover{background:#F7F8F6;color:var(--ink)}
+button.border-b-2[class*="border-[#43A047]"]{background:var(--g100);color:var(--g800);font-weight:600}
+button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:var(--g800)}
