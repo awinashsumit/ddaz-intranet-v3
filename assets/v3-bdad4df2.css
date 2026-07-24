@@ -43,13 +43,13 @@
 
 /* ---------- Hero ---------- */
 .v3-hero{
-  background:url(./hero-bg-e834328b.jpg) center/cover no-repeat;
+  background:rgb(247,250,247);
   color:var(--ink);padding:52px 28px 44px;text-align:center;font-family:var(--font);position:relative;overflow:hidden;
 }
 .v3-hero::before{content:none}
 .v3-hero>*{position:relative}
 .v3-hero-title{font-size:30px;font-weight:700;letter-spacing:-0.4px;margin:0 0 6px}
-.v3-hero-title em{font-style:normal;color:#2DB035;text-shadow:0 0 18px rgba(255,255,255,0.9),0 1px 2px rgba(255,255,255,0.6)}
+.v3-hero-title em{font-style:normal;color:#2DB035}
 .v3-hero-sub{font-size:13.5px;color:var(--ink2);margin:0 0 22px}
 .v3-hero-search{
   display:flex;align-items:center;gap:10px;max-width:560px;margin:0 auto 30px;
@@ -160,7 +160,7 @@
   text-align:center;font-size:11.5px;color:var(--ink3)}
 
 /* ---------- Hero: recent activity strip ---------- */
-.v3-recent-label{font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink2);margin:0 0 14px}
+.v3-recent-label{font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink3);margin:0 0 14px}
 .v3-recentrow{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;max-width:1080px;margin:0 auto}
 .v3-recent{
   display:flex;align-items:center;gap:11px;text-decoration:none;text-align:left;
