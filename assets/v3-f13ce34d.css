@@ -178,7 +178,8 @@
 
 /* ---------- Explore: bento grid ---------- */
 .v3-bento{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
-.v3-bento-tile{padding:20px 22px 16px;display:flex;flex-direction:column;min-width:0}
+.v3-bento-tile{padding:20px 22px 16px;display:flex;flex-direction:column;min-width:0;transition:background .18s,transform .15s}
+.v3-bento-tile:hover{transform:translateY(-2px)}
 .v3-bento-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
 .v3-bento-icon{width:38px;height:38px;border-radius:11px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--g100);color:var(--g700)}
 .v3-bento-title{font-size:15.5px;font-weight:700;color:var(--ink);flex:1;min-width:0}
@@ -186,11 +187,29 @@
 .v3-bento-item:last-child{border-bottom:none}
 .v3-bento-item:hover{color:var(--g800)}
 .v3-bento-dot{width:6px;height:6px;border-radius:999px;background:var(--g500);flex-shrink:0}
-.v3-bento-tile.accent{background:linear-gradient(135deg,var(--g800) 0%,var(--g500) 120%);border:1px solid transparent}
-.v3-bento-tile.accent .v3-bento-icon{background:rgba(255,255,255,0.16);color:#fff}
-.v3-bento-tile.accent .v3-bento-title{color:#fff}
-.v3-bento-tile.accent .v3-bento-item{color:rgba(255,255,255,0.85);border-bottom-color:rgba(255,255,255,0.14)}
-.v3-bento-tile.accent .v3-bento-item:hover{color:#fff}
-.v3-bento-tile.accent .v3-bento-dot{background:rgba(255,255,255,0.7)}
-.v3-bento-tile.accent .v3-viewall{border-color:rgba(255,255,255,0.4);color:#fff}
-.v3-bento-tile.accent .v3-viewall:hover{background:rgba(255,255,255,0.15)}
+.v3-bento-tile:hover{background:linear-gradient(135deg,var(--g800) 0%,var(--g500) 120%);border:1px solid transparent}
+.v3-bento-tile:hover .v3-bento-icon{background:rgba(255,255,255,0.16);color:#fff}
+.v3-bento-tile:hover .v3-bento-title{color:#fff}
+.v3-bento-tile:hover .v3-bento-item{color:rgba(255,255,255,0.85);border-bottom-color:rgba(255,255,255,0.14)}
+.v3-bento-tile:hover .v3-bento-item:hover{color:#fff}
+.v3-bento-tile:hover .v3-bento-dot{background:rgba(255,255,255,0.7)}
+.v3-bento-tile:hover .v3-viewall{border-color:rgba(255,255,255,0.4);color:#fff}
+.v3-bento-tile:hover .v3-viewall:hover{background:rgba(255,255,255,0.15)}
+
+/* ---------- Home top row: announcements + rail ---------- */
+.v3-toprow{display:grid;grid-template-columns:minmax(0,2fr) minmax(300px,360px);gap:24px;align-items:start}
+.v3-panelhead{display:flex;align-items:center;gap:10px;padding:15px 20px;border-bottom:1px solid var(--hairline)}
+.v3-panelhead .t{font-size:14.5px;font-weight:700;color:var(--ink);flex:1;display:flex;align-items:center;gap:8px}
+.v3-count{display:inline-block;border-radius:999px;background:var(--g100);color:var(--g800);font-size:11px;font-weight:700;padding:2px 9px}
+.v3-anngrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px;padding:18px}
+.v3-annitem{border:1px solid var(--hairline);border-radius:14px;overflow:hidden;text-decoration:none;display:block;background:#fff;transition:transform .15s,box-shadow .15s}
+.v3-annitem:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.v3-annart{height:118px;background-size:cover;background-position:center}
+.v3-annbody{padding:12px 14px 14px}
+.v3-annbody .v3-newstitle{font-size:14px}
+.v3-rail{display:flex;flex-direction:column;gap:24px;min-width:0}
+.v3-qlgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px 18px}
+.v3-qlchip{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;border:1px solid rgba(46,125,50,0.16);background:#FBFDFB;font-size:12.5px;font-weight:600;color:var(--ink2);text-decoration:none;transition:all .15s}
+.v3-qlchip:hover{background:var(--g100);color:var(--g800)}
+.v3-qldot{width:6px;height:6px;border-radius:999px;background:var(--g500);flex-shrink:0}
+@media (max-width:1080px){.v3-toprow{grid-template-columns:1fr}}
