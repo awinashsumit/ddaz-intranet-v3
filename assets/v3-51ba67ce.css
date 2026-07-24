@@ -67,7 +67,7 @@
 .v3-quick-label{font-size:12px;color:rgba(255,255,255,0.85)}
 
 /* ---------- Page body / sections ---------- */
-.v3-body{flex:1;overflow-y:auto;background:var(--g50);scrollbar-width:thin;font-family:var(--font)}
+.v3-body{flex:1;overflow-y:auto;background:#fff;scrollbar-width:thin;font-family:var(--font)}
 .v3-main{max-width:1180px;margin:0 auto;padding:36px 28px 48px}
 .v3-section{margin-bottom:44px}
 .v3-h2{font-size:24px;font-weight:700;color:var(--ink);letter-spacing:-0.4px;margin:0 0 18px}
