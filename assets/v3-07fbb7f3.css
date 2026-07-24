@@ -213,3 +213,16 @@
 .v3-qlchip:hover{background:var(--g100);color:var(--g800);transform:translateY(-1px)}
 .v3-qldot{width:6px;height:6px;border-radius:999px;background:var(--g500);flex-shrink:0}
 @media (max-width:1080px){.v3-toprow{grid-template-columns:1fr}}
+
+/* --- ticker (happening strip) --- */
+.v3-ticker{display:flex;align-items:stretch;height:40px;background:#2DB035;overflow:hidden}
+.v3-ticker-label{display:flex;align-items:center;flex:0 0 auto;padding:0 18px;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--ink);background:rgba(255,255,255,0.30)}
+.v3-ticker-track{flex:1;display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 28px,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,transparent,#000 28px,#000 calc(100% - 28px),transparent)}
+.v3-ticker-move{display:flex;align-items:center;white-space:nowrap;animation:v3tick 36s linear infinite;will-change:transform}
+.v3-ticker:hover .v3-ticker-move{animation-play-state:paused}
+.v3-ticker-item{display:inline-flex;align-items:center;gap:10px;padding-left:26px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none}
+.v3-ticker-item:hover span.tx{text-decoration:underline}
+.v3-ticker-item strong{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,0.35);padding:3px 9px;border-radius:999px}
+.v3-ticker-dot{width:5px;height:5px;border-radius:50%;background:rgba(0,0,0,0.35);margin-left:26px}
+@keyframes v3tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.v3-ticker-move{animation:none}}
