@@ -100,11 +100,12 @@
 .v3-linkstack{display:flex;flex-direction:column;gap:14px}
 .v3-linkbanner{
   display:flex;align-items:center;justify-content:space-between;text-decoration:none;
-  background:linear-gradient(120deg,var(--g900) 0%,var(--g700) 100%);color:#fff;
-  border-radius:14px;padding:22px 22px;font-weight:700;font-size:14.5px;letter-spacing:.3px;
-  transition:transform .15s,box-shadow .15s;
+  background:var(--g100);color:var(--g800);
+  border-radius:14px;padding:20px 22px;font-weight:700;font-size:14.5px;letter-spacing:.2px;
+  transition:background .15s,transform .15s;
 }
-.v3-linkbanner:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(27,94,32,0.25)}
+.v3-linkbanner:hover{background:#DDEFE0;transform:translateY(-2px)}
+.v3-linkbanner-left{display:flex;align-items:center;gap:12px}
 
 /* Events + Joiners */
 .v3-evjoin{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,1fr);gap:26px}
