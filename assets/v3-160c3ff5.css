@@ -175,3 +175,22 @@
 .v3-recent-name{font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap}
 .v3-recent-meta{font-size:11px;color:var(--ink3);white-space:nowrap}
 
+
+/* ---------- Explore: bento grid ---------- */
+.v3-bento{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.v3-bento-tile{padding:20px 22px 16px;display:flex;flex-direction:column;min-width:0}
+.v3-bento-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.v3-bento-icon{width:38px;height:38px;border-radius:11px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--g100);color:var(--g700)}
+.v3-bento-title{font-size:15.5px;font-weight:700;color:var(--ink);flex:1;min-width:0}
+.v3-bento-item{display:flex;align-items:center;gap:10px;padding:9px 2px;font-size:13px;color:var(--ink2);text-decoration:none;border-bottom:1px solid rgba(0,0,0,0.05);transition:color .15s}
+.v3-bento-item:last-child{border-bottom:none}
+.v3-bento-item:hover{color:var(--g800)}
+.v3-bento-dot{width:6px;height:6px;border-radius:999px;background:var(--g500);flex-shrink:0}
+.v3-bento-tile.accent{background:linear-gradient(135deg,var(--g800) 0%,var(--g500) 120%);border:1px solid transparent}
+.v3-bento-tile.accent .v3-bento-icon{background:rgba(255,255,255,0.16);color:#fff}
+.v3-bento-tile.accent .v3-bento-title{color:#fff}
+.v3-bento-tile.accent .v3-bento-item{color:rgba(255,255,255,0.85);border-bottom-color:rgba(255,255,255,0.14)}
+.v3-bento-tile.accent .v3-bento-item:hover{color:#fff}
+.v3-bento-tile.accent .v3-bento-dot{background:rgba(255,255,255,0.7)}
+.v3-bento-tile.accent .v3-viewall{border-color:rgba(255,255,255,0.4);color:#fff}
+.v3-bento-tile.accent .v3-viewall:hover{background:rgba(255,255,255,0.15)}
