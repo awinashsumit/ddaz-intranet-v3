@@ -187,14 +187,11 @@
 .v3-bento-item:last-child{border-bottom:none}
 .v3-bento-item:hover{color:var(--g800)}
 .v3-bento-dot{width:6px;height:6px;border-radius:999px;background:var(--g500);flex-shrink:0}
-.v3-bento-tile:hover{background:linear-gradient(135deg,var(--g800) 0%,var(--g500) 120%);border:1px solid transparent}
-.v3-bento-tile:hover .v3-bento-icon{background:rgba(255,255,255,0.16);color:#fff}
-.v3-bento-tile:hover .v3-bento-title{color:#fff}
-.v3-bento-tile:hover .v3-bento-item{color:rgba(255,255,255,0.85);border-bottom-color:rgba(255,255,255,0.14)}
-.v3-bento-tile:hover .v3-bento-item:hover{color:#fff}
-.v3-bento-tile:hover .v3-bento-dot{background:rgba(255,255,255,0.7)}
-.v3-bento-tile:hover .v3-viewall{border-color:rgba(255,255,255,0.4);color:#fff}
-.v3-bento-tile:hover .v3-viewall:hover{background:rgba(255,255,255,0.15)}
+.v3-bento-tile:hover{background:linear-gradient(var(--g100),var(--g100)) padding-box,linear-gradient(180deg,var(--stroke-hi) 0%,var(--stroke-lo) 100%) border-box}
+.v3-bento-tile:hover .v3-bento-icon{background:#fff;color:var(--g700)}
+.v3-bento-tile:hover .v3-bento-title{color:var(--g800)}
+.v3-bento-tile:hover .v3-bento-item{border-bottom-color:rgba(46,125,50,0.14)}
+.v3-bento-tile:hover .v3-bento-item:hover{color:var(--g800)}
 
 /* ---------- Home top row: announcements + rail ---------- */
 .v3-toprow{display:grid;grid-template-columns:minmax(0,2fr) minmax(300px,360px);gap:24px;align-items:start}
