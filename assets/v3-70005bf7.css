@@ -176,3 +176,7 @@
 }
 .v3-recent-name{font-size:13px;font-weight:600;color:#fff;white-space:nowrap}
 .v3-recent-meta{font-size:11px;color:rgba(255,255,255,0.62);white-space:nowrap}
+
+/* Recent activity: show 4 items when 5 would wrap */
+@media (max-width:1240px){.v3-recentrow .v3-recent:nth-child(5){display:none}}
+@media (max-width:1000px){.v3-recentrow .v3-recent:nth-child(4){display:none}}
