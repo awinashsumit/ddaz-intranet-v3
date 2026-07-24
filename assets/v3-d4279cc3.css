@@ -188,7 +188,6 @@
 .v3-bento-item:hover{color:var(--g800)}
 .v3-bento-dot{width:6px;height:6px;border-radius:999px;background:var(--g500);flex-shrink:0}
 .v3-bento-tile:hover{background:linear-gradient(var(--g100),var(--g100)) padding-box,linear-gradient(180deg,var(--stroke-hi) 0%,var(--stroke-lo) 100%) border-box}
-.v3-bento-tile:hover .v3-bento-icon{background:#fff;color:var(--g700)}
 .v3-bento-tile:hover .v3-bento-title{color:var(--g800)}
 .v3-bento-tile:hover .v3-bento-item{border-bottom-color:rgba(46,125,50,0.14)}
 .v3-bento-tile:hover .v3-bento-item:hover{color:var(--g800)}
